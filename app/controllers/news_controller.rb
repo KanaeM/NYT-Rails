@@ -8,17 +8,18 @@ class NewsController < ApplicationController
   # NYT-api to be moved to another controller
   def index
     key = "7a3872ec641840f6a31b6b4da77aad1d"
-    search ="trees"
+    search ="bees"
     startYear = '20160101'
     endYear = '20170101'
     url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?api_key='+key+'&q='+search+'&begin_date='+startYear+'&end_date='+endYear
     response = HTTParty.get(url)
 
-    @search_param = params
+     @article = response["response"]["docs"]
 
-    @article = response["response"]["docs"]
+     puts response["response"]["docs"].first["multimedia"][0]["url"]
 
     @news = News.new
+
   end
 
   # GET /news/1

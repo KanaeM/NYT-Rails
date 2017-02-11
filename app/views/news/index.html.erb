@@ -1,12 +1,21 @@
 <div>
-  <ul class="list-group">
-    <% @article.each do |art| %>
-    <li class="list-group-item">
+  <% @article.each do |art| %>
+  <span class="thumbnail">
+    <%= image_tag "http://www.nytimes.com/"+art["multimedia"][0]["url"] %>
+    <div class="caption">
       <h3 id="headline"><%= art["headline"]["main"] %></h3>
       <p><%= art["snippet"] %></p>
       <%= link_to "Read more..", art["web_url"], target: "_blank" %>
-      <%= button_to 'Save', {:controller => "news", :action => "create", :news => {:title => art["headline"]["main"], :snippet => art["snippet"], :url => art["web_url"]}}, :method=>:post  %>
-    </li>
-    <% end %>
-  </ul>
+      <%= button_to 'Save', 
+        {:controller => "news", 
+        :action => "create", 
+        :news => {:title => art["headline"]["main"], 
+        :snippet => art["snippet"],
+        :url => art["web_url"]}}, 
+        :method=>:post  
+      %>
+    </div>
+      
+  </span>
+  <% end %>
 </div>

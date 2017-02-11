@@ -14,26 +14,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body{
+	background-image: url("newsppr.jpg");
+}
+
 .jumbotron{
+	
 	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
-}
-
-.nav{
-	margin: 0;
-	border-radius: 0;
-}
-
-.nform{
-	margin: 10px 50px;	
-}
-
-.list-group-item input{
-	background-color: #2B8AD9;
-	padding: 8px 15px;
-	margin: 10px 0;
-	color: white;
-	font-size: 20px;
 }
 
 .jumbotron h1{
@@ -46,6 +34,7 @@
 	margin: 2;
 }
 
+/*contents inside jumbotron*/
 .btn-info{
 	margin-left: -10px;
 	margin-top: -5px;
@@ -65,6 +54,35 @@
 	margin: 50px 0;
 	font-size: 30px;
 }
+
+.nav{
+	margin: 0;
+	border-radius: 0;
+}
+
+/*save button on main page*/
+.list-group-item input{
+	background-color: #2B8AD9;
+	padding: 8px 15px;
+	margin: 10px 0;
+	color: white;
+	font-size: 20px;
+}
+
+.saveTitle{
+	text-align: center;
+}
+
+.thumbnail{
+	width: 315px;
+	height: 400px;
+	float: left;
+	margin: 10px 15px;
+}
+
+/*.nform{
+	margin: 10px 50px;	
+}*/
 
 /*.btn{
 	width: 25%;
