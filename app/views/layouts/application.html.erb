@@ -27,8 +27,13 @@
 </nav>
     <div class="conatiner">
       <div class="jumbotron text-center">
-        <h1>New York Times News Search</h1>
+        <h1 class="mainTitle">New York Times News Search</h1>
+        <hr/>
         <p>Search and save your favorite NY Times news in one app!</p>
+        <div class="searchBox">
+          <input type="text" class="form-control mainSearch" placeholder="Start searching!">
+            <button class="btn btn-info" type="button"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
       </div>
       <div class="container">
         <%= yield %>  

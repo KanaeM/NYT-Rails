@@ -28,6 +28,44 @@
 	margin: 10px 50px;	
 }
 
+.list-group-item input{
+	background-color: #2B8AD9;
+	padding: 8px 15px;
+	margin: 10px 0;
+	color: white;
+	font-size: 20px;
+}
+
+.jumbotron h1{
+	font-size: 100px;
+	margin-top: 50px;
+}
+
+.jumbotron hr{
+	width: 20%;
+	margin: 2;
+}
+
+.btn-info{
+	margin-left: -10px;
+	margin-top: -5px;
+	font-size: 20px;
+}
+
+.mainSearch{
+	font-size: 30px;
+	padding: 20px;
+	width: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline;
+}
+
+.searchBox{
+	margin: 50px 0;
+	font-size: 30px;
+}
+
 /*.btn{
 	width: 25%;
 	margin: 0 20px;

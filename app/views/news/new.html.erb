@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Saved News Archive</h1>
+<h1>Saved News Articles</h1>
 
 <ul class="list-group">
 	<% @news.each do |news| %>
 		<li class="list-group-item">
 
 			<h3><%= news.title %></h3>
-			<p><%= news.snippet %>... </p>
-			<%= link_to 'More', "http://#{news.url}" %>
-			<%= link_to 'Delete', news, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<p><%= news.snippet %>... <%= link_to 'More', "#{news.url}", target: "_blank" %></p>
+			
+			<%= link_to 'Delete', news, method: :delete, class: "btn btn-danger", data: { confirm: 'Are you sure?' } %>
 		</li>
 	<% end %>
 </ul>
