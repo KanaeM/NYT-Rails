@@ -1,24 +1,8 @@
-# README
+# New York Times Article Search
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I am recreating a previous project I worked on, [NYT React](https://github.com/KanaeM/NYT-React), to Ruby on Rails. The previous one was made with the MERN stack. 
 
-Things you may want to cover:
+Work in progress...
 
-* Ruby version
+Heroku [Link](https://secure-thicket-40318.herokuapp.com)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
