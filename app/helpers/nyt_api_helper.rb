@@ -1,0 +1,2 @@
+module NytApiHelper
+end

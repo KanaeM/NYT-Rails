@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NYT Search Page</title>
+    <%= csrf_meta_tags %>
+    
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+   <!--  <a class="navbar-brand" href="#">Animated Burger, Bootstrap</a> -->
+    </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/">Home</a></li>
+      <li><a href="/news/new">Saved Articles</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class="conatiner">
+      <div class="jumbotron text-center">
+        <h1>New York Times News Search</h1>
+        <p>Search and save your favorite NY Times news in one app!</p>
+      </div>
+      <div class="container">
+        <%= yield %>  
+      </div>
+    </div>
+  </body>
+</html>
