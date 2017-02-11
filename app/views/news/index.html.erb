@@ -2,10 +2,12 @@
   <% @article.each do |art| %>
   <span class="thumbnail">
     <%= image_tag "http://www.nytimes.com/"+art["multimedia"][0]["url"] %>
+    <hr/>
     <div class="caption">
       <h3 id="headline"><%= art["headline"]["main"] %></h3>
-      <p><%= art["snippet"] %></p>
-      <%= link_to "Read more..", art["web_url"], target: "_blank" %>
+      <p><%= art["snippet"] %>... 
+        <%= link_to "Read more..", art["web_url"], target: "_blank" %>
+      </p>
       <%= button_to 'Save', 
         {:controller => "news", 
         :action => "create", 

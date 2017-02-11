@@ -73,12 +73,37 @@ body{
 	text-align: center;
 }
 
+/*main page news results*/
+
 .thumbnail{
-	width: 315px;
-	height: 400px;
+	background-color: rgba(255, 255, 255, 0.85);
+	width: 350px;
+	height: 410px;
 	float: left;
 	margin: 10px 15px;
 }
+
+.thumbnail hr{
+	margin: 10px 20px;
+}
+
+.thumbnail h3{
+	margin-top: 0;
+}
+
+.thumbnail input{
+	margin-top: 15px;
+	background-color: #2B8AD9;
+	padding: 4px 15px;
+	/*margin: 10px 0;*/
+	color: white;
+	font-size: 15px;
+}
+
+/*.list-group-item{
+	background-color: rgba(255, 255, 255, 0.9);
+}*/
+
 
 /*.nform{
 	margin: 10px 50px;	

@@ -14,9 +14,9 @@ class NewsController < ApplicationController
     url = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?api_key='+key+'&q='+search+'&begin_date='+startYear+'&end_date='+endYear
     response = HTTParty.get(url)
 
-     @article = response["response"]["docs"]
+    # puts response
 
-     puts response["response"]["docs"].first["multimedia"][0]["url"]
+    @article = response["response"]["docs"]
 
     @news = News.new
 
