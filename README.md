@@ -7,5 +7,5 @@ Work in progress...
 Notes:
 * Fix search bar for NYT external API search (current one is a placeholder for now --not linked)
 
-Heroku [Link](https://secure-thicket-40318.herokuapp.com)
+Heroku [Link](https://nyt-rails.herokuapp.com/)
 
